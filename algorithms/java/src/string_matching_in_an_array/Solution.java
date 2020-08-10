@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,15 +15,23 @@ import java.util.List;
 
 public class Solution {
     
-    public static List<String> stringMatching(String[] words) {
+    public List<String> stringMatching(String[] words) {
+        List<String> matches = new ArrayList<>();
         for(int i = 0; i < words.length; i++) {
-            
+            for(int j = i; j < words.length; j++) {
+                if(i != j && words[i].contains(words[j])) {
+                    matches.add(words[i]);
+                    break;
+                }
+                
+            }
         }
+        return matches;
     }
     public static void main(String[] args) {
-
+        Solution sol = new Solution();
         String[] words = {"mass", "as", "hero", "superhero"};
-        List<String> matched = stringMatching(words);
+        List<String> matched = sol.stringMatching(words);
         for(String match:matched)
             System.out.println(match);
     }
