@@ -20,6 +20,36 @@
  */
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
-        
+        while(head != null && head.val == val) {
+            head = head.next;
+        }
+        if(head == null) {
+            return head;
+        }
+        ListNode curr = head;
+        while(curr.next != null) {
+            if(curr.next.val == val) {
+                curr.next = curr.next.next;
+            }
+            else{
+                curr = curr.next;
+            }
+        }
+        return head;
+    }
+    public static void main(String[] args) {
+        ListNode list = new ListNode(1, new ListNode(2, new ListNode(6, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6)))))));
+        ListNode temp = list;
+        while(temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+        Solution sol = new Solution();
+        temp = sol.removeElements(list, 6);
+        while(temp != null) {
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
     }
 }
