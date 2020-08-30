@@ -16,10 +16,22 @@ class ListNode {
 
 class Solution {
     public static ListNode swapPairs(ListNode head) {
-        ListNode temp = head;
-        while(temp != null) {
-            
+        if(head == null || head.next == null)
+            return head;
+        ListNode curr = head;
+        ListNode newHead = curr.next;
+        while(curr != null) {
+            ListNode before =  curr.next;
+            ListNode next = before.next;
+            before.next = curr;
+            if(next == null || next.next == null) {
+                curr.next = next;
+                break;
+            }
+            curr.next = next.next;
+            curr = next;
         }
+        return newHead;
     }
 
     public static void main(String[] args) {
