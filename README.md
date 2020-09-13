@@ -3,7 +3,7 @@ I am documenting my problem solving journey through Leetcode!
 
 | # | Problem | Solution | Difficulty | Language |
 | ------ | ------ | ------ | ------ | ------ |
-| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [View](algorithms\java\swap_nodes_in_pairs\) | Medium | Java |
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [View](algorithms\java\swap_nodes_in_pairs) | Medium | Java |
 | 100 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [View](algorithms\java\intersection_of_two_linked_lists\Solution.java) | Easy | Java |
 | 121 |  [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [View](algorithms\java\buy_and_sell_stock\Solution.java) | Easy | Java |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | [View](algorithms\java\remove_linked_list_elements\Solution.java) | Easy | Java |
