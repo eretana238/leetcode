@@ -41,6 +41,7 @@ public:
     }
 };  
 ```
+Take a look at the [solution file](./RunningSumOf1DArray.cc)
 
 ## Main Points
 -  I need to get into the mindset of thinking if any data structure will be useful. 
